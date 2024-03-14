@@ -1,0 +1,51 @@
+[
+    {
+      "id": 1,
+      "title": "Wireless Bluetooth Headphones",
+      "price": 1250,
+      "description": "Experience high-quality sound and comfort with these wireless Bluetooth headphones. Perfect for music lovers and commuters.",
+      "category": "Electronics",
+      "image": "https://i.ibb.co/ZcjQn4r/01-Wireless-Bluetooth-Headphones.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Men's Casual Slim Fit Shirt",
+      "price": 650,
+      "description": "Stay stylish and comfortable with this men's casual slim-fit shirt. Made from soft cotton material, perfect for everyday wear.",
+      "category": "Clothing",
+      "image": "https://i.ibb.co/S7Xvsrm/02-Men-s-Shirt.jpg"
+    },
+    {
+      "id": 3,
+      "title": "The Great Gatsby by F. Scott Fitzgerald",
+      "price": 700,
+      "description": "Immerse yourself in the classic tale of love, wealth, and tragedy set in the roaring twenties. A must-read for literature enthusiasts.",
+      "category": "Books",
+      "image": "https://i.ibb.co/m6ncxJB/03-The-Great-Gatsby.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Stainless Steel Cookware Set",
+      "price": 1450,
+      "description": "Upgrade your kitchen with this durable and stylish stainless steel cookware set. Includes pots, pans, and utensils for all your cooking needs.",
+      "category": "Home & Kitchen",
+      "image": "https://i.ibb.co/VpKNZDy/04-Steel-Cookware.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Women's Running Shoes",
+      "price": 850,
+      "description": "Hit the ground running with these comfortable and supportive women's running shoes. Designed for performance and style.",
+      "category": "Sports & Outdoors",
+      "image": "https://i.ibb.co/txd6fPY/05-Women-s-Running-Shoes.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Smart LED TV",
+      "price": 6000,
+      "description": "Transform your living room entertainment experience with this smart LED TV. Enjoy stunning picture quality and access to your favorite streaming services.",
+      "category": "Electronics",
+      "image": "https://i.ibb.co/NjLzfzf/06-Smart-LED-TV.jpg"
+    }
+  ]
+  

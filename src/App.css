@@ -1,0 +1,31 @@
+.main-container{
+    display: flex;
+    justify-content: space-around;
+}
+.card{
+    width: 300px;
+    text-align: center;
+    border: 3px solid red;
+    border-radius: 16px;
+    padding: 20px;
+}
+.card-img{
+    width: 300px;
+    border-radius: 12px;
+}
+
+.add-btn{
+    height: 40px;
+    width: 100px;
+    border-radius: 12px;
+    font-size: medium;
+}
+
+
+
+
+
+cards-container{
+    width: 300px;
+    box-shadow: 4px 4px 8px gray;
+}

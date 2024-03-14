@@ -1,6 +1,13 @@
+.container{
+    background-color: aqua;
+}
 .main-container{
     display: flex;
     justify-content: space-around;
+}
+.project-title{
+    text-align: center;
+    padding: 10px;
 }
 .card{
     width: 300px;
@@ -8,6 +15,8 @@
     border: 3px solid red;
     border-radius: 16px;
     padding: 20px;
+    background-color: white;
+    margin-bottom: 20px;
 }
 .card-img{
     width: 300px;
@@ -21,11 +30,16 @@
     font-size: medium;
 }
 
-
-
-
-
-cards-container{
+/* 2nd part */
+.cart-container{
     width: 300px;
-    box-shadow: 4px 4px 8px gray;
+background-color: white;
+padding: 20px;
+text-align: center;
+border-radius: 12px;
+border: 3px solid red;
+}
+.cart-title{
+    display: flex;
+    justify-content: space-around;
 }

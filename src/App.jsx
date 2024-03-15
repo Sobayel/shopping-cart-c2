@@ -5,49 +5,66 @@ import SingleProduct from './SingleProduct';
 
 function App() {
   const [products, setProducts] = useState([]);
-  const [cart, setCart] =useState([]);
+  const [cart, setCart] = useState([]);
 
-  useEffect(() =>{
+  useEffect(() => {
     fetch("/public/shoppingCart.json")
-    .then((res) => res.json())
-    .then((data) => setProducts(data))
-  },[]);
+      .then((res) => res.json())
+      .then((data) => setProducts(data))
+  }, []);
 
   const handleCart = (p) => {
-    const isExist = cart.find((product) => product.id ==p.id);
-    if(!isExist){
+    setCart([p])
+    const isExist = cart.find((item) => item.id == p.id);
+    console.log(isExist)
+    if (!isExist) {
       setCart([...cart, p])
-    }else{
+    } else {
       alert('already in cart');
     }
   }
+  console.log(cart)
 
+  const handleRemove = (id) =>{
+    const newCart = cart .filter(item => item.id != id);
+    setCart(newCart)
+  }
 
-  console.log(products)
   return (
     <>
       <div className='container'>
-      <h1 className='project-title'>Shopping Cart</h1>
-      <div className="main-container">
-        <div className="cards-container">
+        <h1 className='project-title'>Shopping Cart</h1>
+        <div className="main-container">
+          <div className="cards-container">
 
-          {
-            products.map(product => <SingleProduct 
-              product={product} 
-              key={product.id}
-              handleCart={handleCart}
+            {
+              products.map(product => <SingleProduct
+                product={product}
+                key={product.id}
+                handleCart={handleCart}
               ></SingleProduct>)
-          }
-        </div>
+            }
+          </div>
 
-        <div className="cart-container">
-          <h2 className="text-3xl font-semibold">This is Left Side Cart</h2>
-          <div className='cart-title'>
-            <h4>Name</h4>
-            <h4>Price</h4>
+          <div className="cart-container">
+            <h3>This is selection item Cart</h3>
+            <div className='cart-title'>
+              <h4>Name</h4>
+              <h4>Price</h4>
+            </div>
+            <div>
+              {
+                cart.map((item) => (
+                  <div className='cart-info'>
+                    <h4>{item.title.slice(0, 15)}</h4>
+                    <h4>{item.price}</h4>
+                    <button onClick={() => handleRemove(item.id)} className='remove'>Remove</button>
+                  </div>
+                ))
+              }
+            </div>
           </div>
         </div>
-      </div>
       </div>
     </>
   )

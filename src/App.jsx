@@ -8,7 +8,7 @@ function App() {
   const [cart, setCart] = useState([]);
 
   useEffect(() => {
-    fetch("/public/shoppingCart.json")
+    fetch("/shoppingCart.json")
       .then((res) => res.json())
       .then((data) => setProducts(data))
   }, []);
